@@ -14,14 +14,14 @@ export default function WhoIsItFor() {
             <p className="text-3xl font-semibold leading-tight tracking-tight text-charcoal md:text-4xl">
               Whether you're just starting out
               <br />
-              or far along — this is a place
+              or far along, this is a place
               <br />
               for you to{" "}
               <em className="not-italic text-accent">make things.</em>
             </p>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-muted">
               Writing your first program, shipping side projects, looking for
-              internships, or exploring software engineering as a career —
+              internships, or exploring software engineering as a career.
               CUSEC is built to help you learn, meet people, and get inspired.
             </p>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-muted">
@@ -43,7 +43,7 @@ export default function WhoIsItFor() {
           >
             <Image
               src="/bliss-trees.png"
-              alt="Trees — representing growth and community at CUSEC"
+              alt="Trees representing growth and community at CUSEC"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

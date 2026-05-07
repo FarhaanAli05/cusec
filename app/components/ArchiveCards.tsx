@@ -31,7 +31,7 @@ const archiveItems = [
   },
   {
     year: "Early Archive",
-    location: "2002–2009",
+    location: "2002-2009",
     description: "The founding years of CUSEC.",
     href: "#",
   },

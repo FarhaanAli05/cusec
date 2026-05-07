@@ -23,7 +23,7 @@ export default function AboutSection() {
           >
             <Image
               src="/bliss-field.png"
-              alt="Open field — representing CUSEC's open, welcoming community"
+              alt="Open field representing CUSEC's open, welcoming community"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

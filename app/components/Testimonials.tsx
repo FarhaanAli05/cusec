@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     quote:
-      "CUSEC has grown into the premier conference by computer science students, for computer science students — across the whole of Canada.",
+      "CUSEC has grown into the premier conference by computer science students, for computer science students, spanning the whole of Canada.",
     author: "Jeff Atwood",
     role: "Co-founder",
     org: "Stack Overflow",

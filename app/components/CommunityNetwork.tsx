@@ -17,7 +17,7 @@ export default function CommunityNetwork() {
             </h2>
             <p className="mt-5 max-w-md text-base leading-relaxed text-muted">
               A future home for students, alumni, speakers, and builders
-              connected through CUSEC — from every province, every cohort, every
+              connected through CUSEC, from every province, every cohort, every
               year.
             </p>
             <span className="mt-6 inline-block rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CUSEC — Canadian University Software Engineering Conference",
+  title: "CUSEC | Canadian University Software Engineering Conference",
   description:
     "Canada's premier student-run software engineering conference. Founded in 2002, bringing students, engineers, researchers, and industry leaders together every January.",
 };
