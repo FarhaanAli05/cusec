@@ -1,85 +1,49 @@
-import Image from "next/image";
-
+/* eslint-disable @next/next/no-img-element */
 export default function Hero() {
   return (
-    <section className="border-b border-line overflow-hidden">
-      {/* Top meta bar */}
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-4">
-        <div className="flex items-center justify-between">
-          <span className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
-            Est. 2002
-          </span>
-          <span className="hidden text-xs uppercase tracking-widest text-muted md:block">
-            Canada-Wide · Annual · January
-          </span>
-        </div>
-      </div>
-
-      {/* CUSEC hero display text */}
-      <div className="px-4 pb-2">
-        <h1
-          className="font-black text-charcoal select-none"
-          style={{
-            fontSize: "clamp(72px, 18.5vw, 290px)",
-            letterSpacing: "-0.035em",
-            lineHeight: "0.88",
-          }}
-        >
+    <>
+      <section className="mx-auto max-w-5xl px-6 pt-16 pb-12 md:pt-20 md:pb-14">
+        <h1 className="text-6xl font-bold tracking-tight text-charcoal md:text-7xl lg:text-8xl">
           CUSEC
         </h1>
-      </div>
+        <p className="mt-2 text-lg font-medium text-muted md:text-xl">
+          Canadian University Software Engineering Conference
+        </p>
+        <p className="mt-8 max-w-xl text-base leading-relaxed text-charcoal/80">
+          CUSEC is a non-profit organization hosting technology conferences
+          organized by students, for students. Founded in 2002, we host a
+          conference annually in early January, this year we are gearing up for
+          CUSEC 2026.
+        </p>
+        <a
+          href="#"
+          className="mt-8 inline-block border border-charcoal px-5 py-2.5 text-sm font-medium text-charcoal transition-colors hover:bg-charcoal hover:text-cream"
+        >
+          Visit CUSEC 2026's site →
+        </a>
+      </section>
 
-      {/* Rule */}
-      <div className="mx-auto max-w-7xl px-6 pt-4">
-        <div className="border-t border-line" />
-      </div>
-
-      {/* Description + CTAs */}
-      <div className="mx-auto max-w-7xl px-6 py-10 md:py-14">
-        <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-3xl font-semibold leading-tight tracking-tight text-charcoal sm:text-4xl md:text-5xl">
-              Canada's student-run
-              <br />
-              software engineering
-              <br />
-              conference.
-            </p>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-muted">
-              Founded in 2002, CUSEC brings students, engineers, researchers,
-              and industry leaders together every January.
-            </p>
-          </div>
-          <div className="flex shrink-0 flex-col gap-3 sm:flex-row">
-            <a
-              href="#"
-              className="rounded-full bg-charcoal px-7 py-3.5 text-center text-sm font-medium text-cream transition-colors hover:bg-charcoal/80"
-            >
-              Visit CUSEC 2027 →
-            </a>
-            <a
-              href="#archive"
-              className="rounded-full border border-charcoal px-7 py-3.5 text-center text-sm font-medium text-charcoal transition-colors hover:bg-charcoal/5"
-            >
-              View archive
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {/* Group photo — full width, grayscale */}
-      <div className="relative w-full" style={{ aspectRatio: "16 / 6" }}>
-        <Image
+      {/* Group photo at natural aspect ratio — no aggressive crop */}
+      <div className="w-full border-t border-b border-line">
+        <img
           src="/group-photo.png"
-          alt="CUSEC attendees gathered at the annual conference"
-          fill
-          className="object-cover grayscale"
-          priority
-          sizes="100vw"
+          alt="CUSEC 2025 attendees gathered at the annual conference"
+          className="block h-auto w-full grayscale"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 to-transparent" />
       </div>
-    </section>
+
+      {/* Inline stats sentence */}
+      <div className="mx-auto max-w-5xl px-6 py-8">
+        <p className="text-sm text-muted md:text-base">
+          Over <strong className="font-semibold text-charcoal">25+ years</strong>{" "}
+          we've welcomed{" "}
+          <strong className="font-semibold text-charcoal">10,000+</strong>{" "}
+          attendees,{" "}
+          <strong className="font-semibold text-charcoal">270+</strong> sponsors
+          and <strong className="font-semibold text-charcoal">380+</strong>{" "}
+          speakers.
+        </p>
+      </div>
+    </>
   );
 }

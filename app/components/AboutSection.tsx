@@ -1,59 +1,45 @@
-import Image from "next/image";
-
-const highlights = [
-  { label: "3 days", detail: "talks, workshops & networking" },
-  { label: "Career fair", detail: "connect with top tech employers" },
-  { label: "Open demos", detail: "share what you're building" },
-  { label: "Student-run", detail: "organized entirely by students" },
-];
-
+/* eslint-disable @next/next/no-img-element */
 export default function AboutSection() {
   return (
-    <section className="border-b border-line">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:py-24">
-        <span className="mb-12 inline-flex items-center gap-2 rounded-full border border-line px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted">
+    <section className="border-t border-line">
+      <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
+        <h2 className="mb-10 text-xs font-semibold uppercase tracking-widest text-muted">
           What is CUSEC?
-        </span>
+        </h2>
 
-        <div className="mt-12 grid grid-cols-1 items-start gap-12 md:grid-cols-2 md:gap-16">
-          {/* Image */}
-          <div
-            className="relative w-full overflow-hidden"
-            style={{ aspectRatio: "4 / 3" }}
-          >
-            <Image
-              src="/bliss-field.png"
-              alt="Open field representing CUSEC's open, welcoming community"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+        {/* Bliss field image — wide composition, shown at natural ratio */}
+        <div className="mb-12 overflow-hidden">
+          <img
+            src="/bliss-field.png"
+            alt="Open field representing CUSEC's open, welcoming community"
+            className="block h-auto w-full"
+          />
+        </div>
 
-          {/* Text */}
-          <div className="flex flex-col justify-center">
-            <p className="text-3xl font-semibold leading-tight tracking-tight text-charcoal md:text-4xl">
-              An open collective of makers, engineers, designers, and{" "}
-              <em className="not-italic text-accent">everything in-between.</em>
-            </p>
-            <p className="mt-6 max-w-lg text-base leading-relaxed text-muted">
+        <div className="max-w-2xl">
+          <p className="text-2xl font-semibold leading-snug tracking-tight text-charcoal md:text-3xl">
+            An open collective of makers, artists, engineers, designers,
+            writers, poets, and{" "}
+            <em className="not-italic text-accent">everything in-between.</em>
+          </p>
+
+          <div className="mt-8 space-y-4 text-base leading-relaxed text-charcoal/80">
+            <p>
               CUSEC is a 3-day software engineering conference organized by
               students, for students. Each year it brings together engineers,
               researchers, and industry leaders from across Canada for talks,
               workshops, a career fair, and unforgettable networking.
             </p>
-
-            <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {highlights.map((h) => (
-                <div
-                  key={h.label}
-                  className="border border-line p-4"
-                >
-                  <p className="font-bold text-charcoal">{h.label}</p>
-                  <p className="mt-1 text-sm text-muted">{h.detail}</p>
-                </div>
-              ))}
-            </div>
+            <p>
+              The conference features introductions, two 50-minute work blocks,
+              and ends with casual open demos where attendees share what
+              they're building and get feedback from the community.
+            </p>
+            <p>
+              Focused on software engineering, technology, and community, CUSEC
+              has become a defining experience for Canadian students in
+              computing.
+            </p>
           </div>
         </div>
       </div>
